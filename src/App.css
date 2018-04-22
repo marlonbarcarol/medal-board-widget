@@ -1,0 +1,106 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --gold-medal-color: #f3d155;
+  --silver-medal-color: #9ca5ac;
+  --bronze-medal-color: #7f532d;
+}
+
+body {
+  color: #868687;
+}
+
+.text-bold {
+  font-weight: 700;
+  color: #8a8d8f;
+}
+
+.App {
+  display: inline-block;
+  padding: 10px 10px 5px;
+  margin: 20px;
+  box-shadow: 0px -1px 1px 0px grey;
+}
+
+.App-header {
+  font-size: 21px;
+  color: #a2a3a4;
+}
+
+.d-block {
+  display: block;
+}
+
+.btn-unstyled {
+  border: 0px;
+  padding: 0px;
+  -webkit-appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.table-total {
+  color: #5d5d5d;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+
+.medal-sort .medal-border {
+  padding: 5px 12px;
+  border-top: 2px transparent solid;
+}
+
+.medal-sort .medal-border button:active {
+  outline: none;
+}
+
+.medal-sort .medal-border.active {
+  border-top-color: #8c8d8f;
+}
+
+.medal-sort.circle button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.medal-sort.circle.gold-medal button { background-color: var(--gold-medal-color) }
+.medal-sort.circle.silver-medal button { background-color: var(--silver-medal-color) }
+.medal-sort.circle.bronze-medal button { background-color: var(--bronze-medal-color) }
+
+.medal-board-table .flag {
+  display: block;
+  background: url(https://s3-us-west-2.amazonaws.com/reuters.medals-widget/flags.png) no-repeat center;
+  width: 30px;
+  height: 17px;
+}
+
+/**
+ * If used sass, we could have built a loop with an array of
+ * flags in the right order subtracting 17 pixels of each flag.
+ */
+.medal-board-table .flag.aut { background-position-y: 0px }
+.medal-board-table .flag.blr { background-position-y: -17px }
+.medal-board-table .flag.can { background-position-y: -34px }
+.medal-board-table .flag.chn { background-position-y: -51px }
+.medal-board-table .flag.fra { background-position-y: -68px }
+.medal-board-table .flag.ger { background-position-y: -85px }
+.medal-board-table .flag.ita { background-position-y: -102px }
+.medal-board-table .flag.ned { background-position-y: -119px }
+.medal-board-table .flag.nor { background-position-y: -136px }
+.medal-board-table .flag.rus { background-position-y: -153px }
+.medal-board-table .flag.sui { background-position-y: -170px }
+.medal-board-table .flag.swe { background-position-y: -187px }
+.medal-board-table .flag.usa { background-position-y: -204px }
