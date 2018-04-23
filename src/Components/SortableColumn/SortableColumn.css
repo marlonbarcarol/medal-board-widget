@@ -1,0 +1,28 @@
+.medal-sort {
+  --gold-medal-color: #f3d155;
+  --silver-medal-color: #9ca5ac;
+  --bronze-medal-color: #7f532d;
+}
+
+.medal-sort .medal-border {
+  padding: 5px 12px;
+  border-top: 2px transparent solid;
+}
+
+.medal-sort .medal-border button:focus {
+  outline: none;
+}
+
+.medal-sort .medal-border.active {
+  border-top-color: #8c8d8f;
+}
+
+.medal-sort.circle button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.medal-sort.circle.gold-medal button { background-color: var(--gold-medal-color) }
+.medal-sort.circle.silver-medal button { background-color: var(--silver-medal-color) }
+.medal-sort.circle.bronze-medal button { background-color: var(--bronze-medal-color) }

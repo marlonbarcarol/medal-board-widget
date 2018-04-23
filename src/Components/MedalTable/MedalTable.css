@@ -1,0 +1,47 @@
+.medal-board-table {
+  border-collapse: collapse;
+}
+
+.medal-board-table td {
+  padding: 5px 6px;
+  border-bottom: 1px #e7e7e8 solid;
+}
+
+.medal-board-table td:first-child {
+  padding: 0px;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.medal-board-table tr:last-child td {
+  border: 0px;
+}
+
+.medal-board-table .table-total {
+  color: #5d5d5d;
+}
+
+.medal-board-table .flag {
+  display: block;
+  background: url(https://s3-us-west-2.amazonaws.com/reuters.medals-widget/flags.png) no-repeat center;
+  width: 30px;
+  height: 17px;
+}
+
+/**
+ * If used sass, we could have built a loop with an array of
+ * flags in the right order subtracting 17 pixels of each flag.
+ */
+.medal-board-table .flag.aut { background-position-y: 0px }
+.medal-board-table .flag.blr { background-position-y: -17px }
+.medal-board-table .flag.can { background-position-y: -34px }
+.medal-board-table .flag.chn { background-position-y: -51px }
+.medal-board-table .flag.fra { background-position-y: -68px }
+.medal-board-table .flag.ger { background-position-y: -85px }
+.medal-board-table .flag.ita { background-position-y: -102px }
+.medal-board-table .flag.ned { background-position-y: -119px }
+.medal-board-table .flag.nor { background-position-y: -136px }
+.medal-board-table .flag.rus { background-position-y: -153px }
+.medal-board-table .flag.sui { background-position-y: -170px }
+.medal-board-table .flag.swe { background-position-y: -187px }
+.medal-board-table .flag.usa { background-position-y: -204px }

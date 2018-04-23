@@ -2,29 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import 'Components/MedalTable/MedalTable.css';
 
-import MedalTableRows from 'Components/MedalTable/MedalTableRow';
-
-const SortableColumn = ({ isActive, onSort, ariaLabel, children, ...props }) => (
-  <th {...props}>
-    <span className={`d-block medal-border ${isActive ? 'active' : ''}`}>
-      <button
-        type="button"
-        className="btn-unstyled d-block btn-unstyled"
-        aria-label={ ariaLabel }
-        onClick={ () => onSort() }
-      >
-        { children }
-      </button>
-    </span>
-  </th>
-);
-
-SortableColumn.propTypes = {
-  isActive: PropTypes.array.isRequired,
-  ariaLabel: PropTypes.string.isRequired,
-  onSort: PropTypes.object.isRequired,
-  children:PropTypes.element,
-};
+import MedalTableRows from 'Components/MedalTable/MedalTableRows';
+import SortableColumn from 'Components/SortableColumn';
 
 const MedalTable = ({ medals, activeSort, sortableColumn, sortMedals }) => (
   <table className="medal-board-table">

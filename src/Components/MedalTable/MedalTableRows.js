@@ -1,5 +1,4 @@
 import React from 'react';
-import 'Components/MedalTable/MedalTable.css';
 import PropTypes from 'prop-types';
 
 const MedalTableRows = ({ medals }) => (

@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import SortableColumnEnum from 'Components/SortableColumn/SortableColumnEnum';
+import MedalWidget from 'MedalWidget';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+window.MedalWidget = MedalWidget; 
 
+const instance = new MedalWidget(SortableColumnEnum.SILVER, document.querySelector('div'));
+instance.initialize();
 
 /* eslint-disable no-undef */
 if (module.hot) {
